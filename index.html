@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fun Quiz!</title>
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fun Quiz 2: Geography</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <!-- Link to font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="qa-container">
-        <h2>Fun Quiz!</h2>
-        <div class="qa">
-            <div class="question">
-                What is the capital of France? <span class="toggle">+</span>
-            </div>
-            <div class="answer">Paris.</div>
-        </div>
-        <div class="qa">
-            <div class="question">
-                Who wrote "To Kill a Mockingbird"? <span class="toggle">+</span>
-            </div>
-            <div class="answer">Harper Lee.</div>
-        </div>
-        <div class="qa">
-            <div class="question">
-                What is the largest planet in the solar system? <span class="toggle">+</span>
-            </div>
-            <div class="answer">Jupiter.</div>
-        </div>
+  <div class="qa-container">
+    <h2>Fun Quiz 2: Geography</h2>
+    <div class="qa">
+      <div class="question" data-lat="48.8566" data-lng="2.3522">
+        What is the capital of France? <span class="toggle">+</span>
+      </div>
+      <div class="answer">Paris.</div>
     </div>
+    <div class="qa">
+      <div class="question" data-lat="36.1069" data-lng="-112.1129">
+        Where is the Grand Canyon? <span class="toggle">+</span>
+      </div>
+      <div class="answer">The Grand Canyon is in Arizona, USA.</div>
+    </div>
+    <div class="qa">
+      <div class="question" data-lat="35.7148" data-lng="139.7745">
+        Where is the best location to view cherry blossoms in Japan? <span class="toggle">+</span>
+      </div>
+      <div class="answer">One of the best places is Ueno Park in Tokyo, Japan.</div>
+    </div>
+  </div>
 
-    <!-- Include jQuery from CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
 </body>
-
 </html>
